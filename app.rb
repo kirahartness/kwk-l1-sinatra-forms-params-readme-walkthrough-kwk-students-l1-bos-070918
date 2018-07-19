@@ -31,8 +31,8 @@ class App < Sinatra::Base
     erb :food
   end 
   
-   get '/home' do
-    erb :home
+   get '/paid' do
+    erb :paid
   end 
   post  '/results' do
    answers = params.values
