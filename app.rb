@@ -7,10 +7,33 @@ class App < Sinatra::Base
     set :views, 'views'
   end
 
-  get '/' do
+  get '/home' do
+    erb :home
+  end 
+  
+   get '/index' do
     erb :index
   end 
   
+   get '/shop' do
+    erb :shop
+  end 
+  
+   get '/walking' do
+    erb :walking
+  end 
+  
+   get '/live' do
+    erb :live
+  end 
+  
+   get '/food' do
+    erb :food
+  end 
+  
+   get '/home' do
+    erb :home
+  end 
   post  '/results' do
    answers = params.values
    @total = 0
