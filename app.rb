@@ -11,27 +11,27 @@ class App < Sinatra::Base
     erb :home
   end 
   
-   get '/index' do
+   get '/index.html' do
     erb :index
   end 
   
-   get '/shop' do
+   get '/shop.erb' do
     erb :shop
   end 
   
-   get '/walking' do
+   get '/walking.erb' do
     erb :walking
   end 
   
-   get '/live' do
+   get '/live.erb' do
     erb :live
   end 
   
-   get '/food' do
+   get '/food.erb' do
     erb :food
   end 
   
-   get '/paid' do
+   get '/paid.erb' do
     erb :paid
   end 
   post  '/results' do
